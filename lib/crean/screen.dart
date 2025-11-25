@@ -20,7 +20,7 @@ class crean extends StatelessWidget {
 
       body:
          Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFIdo3usKWg1U787wTEh5wDvkRWxfuq_yeFA&s",
-           
+
 
       ), // 👈🏻 نهاية الـ body
 
