@@ -15,7 +15,7 @@ class crean extends StatelessWidget {
         actions: [
           IconButton(onPressed: () {}, icon: Icon(Icons.search)),
           IconButton(onPressed: () {}, icon: Icon(Icons.favorite_border)),
-        ],
+        ]
       ),
 
       body:
