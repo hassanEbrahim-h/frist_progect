@@ -1,6 +1,7 @@
 # frist_progect
 
-A new Flutter project.
+A ne<img width="495" height="976" alt="Screenshot 2025-11-29 203756" src="https://github.com/user-attachments/assets/e3d7e453-d8d8-456b-8353-3f5322fb8cb2" />
+w Flutter project.
 
 ## Getting Started
 
