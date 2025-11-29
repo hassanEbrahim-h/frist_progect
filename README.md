@@ -3,6 +3,7 @@
 A ne<img width="495" height="976" alt="Screenshot 2025-11-29 203756" src="https://github.com/user-attachments/assets/e3d7e453-d8d8-456b-8353-3f5322fb8cb2" />
 w Flutter project.
 <img width="429" height="861" alt="Screenshot 2025-11-29 203612" src="https://github.com/user-attachments/assets/97e1a02d-8661-430b-b384-22d2f58220ec" />
+<img width="476" height="892" alt="Screenshot 2025-11-29 203122" src="https://github.com/user-attachments/assets/f2f9152f-40fd-4d63-b126-c510494e66e8" />
 
 ## Getting Started
 
