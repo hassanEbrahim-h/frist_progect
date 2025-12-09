@@ -1,7 +1,5 @@
  import 'package:flutter/material.dart';
 import 'package:frist_progect/SCREAN.dart';
-
-import '';
 class BmiApp extends StatelessWidget {
   const BmiApp({super.key});
 
