@@ -6,25 +6,31 @@ import 'package:flutter/material.dart';
 class grande extends StatelessWidget {
   final String title;
   final IconData ICON;
-  const grande({super.key, required this.title,required this.ICON});
+  final bool isactave;
+  final   void Function()? onTap;
+  const grande({super.key, required this.title,required this.ICON , this.isactave=false, this.onTap});
 
   @override
   Widget build(BuildContext context) {
+
     return Expanded(
 
-      child: Container(
-        padding:EdgeInsets.all(24) ,
+      child: InkWell(
+        onTap: onTap,
+        child: Container(
+          padding:EdgeInsets.all(24) ,
 
-        decoration:BoxDecoration(
-          color: Color(0xff333244),
-          borderRadius: BorderRadius.circular(12),
-        ),
-        child: Column(
+          decoration:BoxDecoration(
+            color:isactave?Color(0xffE83D67) :Color(0xff333244),
+            borderRadius: BorderRadius.circular(12),
+          ),
+          child: Column(
 
-          children: [
-            Icon(ICON,size: 96,),
-            Text(title)
-          ],
+            children: [
+              Icon(ICON,size: 96,),
+              Text(title ,style: TextStyle(fontSize: 25),)
+            ],
+          ),
         ),
       ),
     );

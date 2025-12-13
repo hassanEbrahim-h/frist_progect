@@ -6,10 +6,11 @@ import 'package:flutter/material.dart';
 class Age extends StatelessWidget  {
   final String title;
   final int text;
-  final IconData ICON;
-  final IconData icon;
-  const Age({super.key ,required this.title, required this.text,required this.ICON,
-  required this.icon});
+
+   final void Function()? increment;
+  final void Function()? decrment;
+  const Age({super.key ,required this.title, required this.text,
+   this.increment, this.decrment});
 
   @override
   Widget build(BuildContext context) {
@@ -35,17 +36,24 @@ class Age extends StatelessWidget  {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              FloatingActionButton.small(onPressed: (){},
+
+              FloatingActionButton.small(
+                key:UniqueKey(),
+                heroTag: "$title 1",
+                onPressed:decrment,
                 shape:RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(100),
                 ),
-                child: Icon(icon),
+                child: Icon(Icons.remove),
               ),
-              FloatingActionButton.small(onPressed: (){},
+              FloatingActionButton.small(
+                key:UniqueKey(),
+                heroTag: "$title 2",
+                onPressed: increment,
                 shape:RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(100),
                 ),
-                child: Icon(ICON),
+                child: Icon(Icons.add),
               ),
 
             ],
